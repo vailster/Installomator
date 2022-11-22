@@ -35,7 +35,7 @@ NOTIFY=success
 #   - all          all notifications (great for Self Service installation)
 
 # behavior when blocking processes are found
-BLOCKING_PROCESS_ACTION=tell_user
+BLOCKING_PROCESS_ACTION=prompt_user
 # options:
 #   - ignore       continue even when blocking processes are found
 #   - quit         app will be told to quit nicely if running
@@ -87,7 +87,7 @@ LOGO=appstore
 
 
 # App Store apps handling
-IGNORE_APP_STORE_APPS=no
+IGNORE_APP_STORE_APPS=yes
 # options:
 #  - no            If the installed app is from App Store (which include VPP installed apps)
 #                  it will not be touched, no matter its version (default)
@@ -105,7 +105,7 @@ SYSTEMOWNER=0
 #                  Useful for shared machines.
 
 # install behavior
-INSTALL=""
+INSTALL="force"
 # options:
 #  -               When not set, the software will only be installed
 #                  if it is newer/different in version
